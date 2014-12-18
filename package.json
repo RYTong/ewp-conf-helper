@@ -1,0 +1,22 @@
+{
+  "name": "ewp-conf-helper",
+  "main": "./lib/ewp-conf-helper",
+  "version": "1.0.0",
+  "description": "EWP conf file helper",
+  "activationCommands": {
+    "atom-workspace": ["ewp-conf-helper:validate", "ewp-conf-helper:format", "ewp-conf-helper:visual"]
+  },
+  "repository": "https://github.com/RYTong/ewp-conf-helper",
+  "license": "MIT",
+  "engines": {
+    "atom": ">0.50.0"
+  },
+  "dependencies": {
+    "open": "*",
+    "atom-message-panel": "*",
+    "erlang-conf": "git://github.com/lujb/erlang-conf",
+    "ecsd": "git://github.com/lujb/ecsd#script",
+    "ewp-ecsd": "git://github.com/lujb/ewp-ecsd",
+    "econf-ui": "git://github.com/lujb/econf-ui"
+  }
+}

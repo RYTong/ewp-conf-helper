@@ -1,0 +1,27 @@
+# See https://atom.io/docs/latest/creating-a-package#menus for more details
+'context-menu':
+  'atom-text-editor': [
+    {
+      'label': 'EWP conf helper'
+      'submenu': [
+        {'label': 'Format', 'command': 'ewp-conf-helper:format'}
+        {'type': 'separator'}
+        {'label': 'Validate', 'command': 'ewp-conf-helper:validate'}
+      ]
+    }
+  ]
+'menu': [
+  {
+    'label': 'Packages'
+    'submenu': [
+      'label': 'EWP Conf Helper'
+      'submenu': [
+        {'label': 'Format', 'command': 'ewp-conf-helper:format'}
+        {'type': 'separator'}
+        {'label': 'Validate', 'command': 'ewp-conf-helper:validate'}
+        {'type': 'separator'}
+        {'label': 'Visual(beta)', 'command': 'ewp-conf-helper:visual'}
+      ]
+    ]
+  }
+]
